@@ -1,0 +1,70 @@
+/* General nav link styling */
+.nav-link {
+  padding: 8px 20px;
+  margin: 6px 8px;
+  border-radius: 11px;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #d4edda;
+  color: #000;
+}
+
+/* Active tab */
+.active-tab {
+  background-color: #198754 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+/* Desktop spacing */
+@media (min-width: 992px) {
+  .nav-item {
+    margin-right: 12px;
+  }
+}
+
+/* Mobile menu styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: auto;
+    min-width: 220px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    margin: 6px 0;
+  }
+
+  .nav-link {
+    padding: 6px 10px;
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+}
