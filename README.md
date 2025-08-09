@@ -1,0 +1,2 @@
+# Newsly
+The news app
