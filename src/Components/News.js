@@ -38,15 +38,6 @@ const News= (props)=>{
  }, []);
   
 
-  // const handlePrevClick = async () => {
-  //    setpage(page-1);
-  //   updateNews();
-  // };
-
-  // const handleNextClick = async () => {
-  //   setpage(page+1);
-  //   updateNews();
-  // };
 
   const fetchMoreData = async () => {
     setpage(page+1);

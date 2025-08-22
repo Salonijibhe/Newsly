@@ -44,3 +44,95 @@
 }
 
 
+/* Navbar container */
+.navbar {
+  background-color: #ffffff !important;  /* keep white background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 0.6rem 1rem;
+  z-index: 1050;
+}
+
+/* Logo */
+.navbar-brand img {
+  object-fit: contain;
+  max-height: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+/* Nav links */
+.nav-link {
+  color: #333 !important;   /* default text dark gray */
+  font-weight: 500;         /* normal */
+  margin-left: 1rem;
+  position: relative;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #14532d !important; /* dark green */
+  font-weight: 700;          /* bold */
+}
+
+/* Active tab */
+.nav-link.active-tab {
+  color: #14532d !important; /* dark green */
+  font-weight: 700;          /* bold */
+}
+
+.nav-link.active-tab::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #14532d; /* dark green underline */
+  border-radius: 2px;
+}
+
+/* Mobile menu close button */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #14532d; /* dark green */
+}
+
+/* Navbar toggler (hamburger icon) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Collapse animation */
+.collapse.show {
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
