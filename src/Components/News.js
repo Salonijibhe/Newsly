@@ -37,6 +37,8 @@ const News= (props)=>{
     updateNews();
  }, []);
   
+ console.log("API Key in production:", props.apiKey);
+
 
 
   const fetchMoreData = async () => {
